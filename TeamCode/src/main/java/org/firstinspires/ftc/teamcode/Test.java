@@ -1,12 +1,2 @@
-package org.firstinspires.ftc.teamcode;
-
-import com.arcrobotics.ftclib.command.CommandOpMode;
-import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-
-@TeleOp
-public class Test extends CommandOpMode {
-    @Override
-    public void initialize() {
-
-    }
+package org.firstinspires.ftc.teamcode;public class Test {
 }

@@ -21,7 +21,7 @@ public class Test extends CommandOpMode {
     @Override
     public void run() {
         motor1.setPower(1);
-        ori1.setPosition(1);
+        ori1.setPosition(gamepad1.left_trigger);
 
     }
 }

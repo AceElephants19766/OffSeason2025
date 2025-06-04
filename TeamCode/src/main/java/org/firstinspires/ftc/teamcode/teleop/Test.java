@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode.teleop;
 
 import com.arcrobotics.ftclib.command.CommandOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
@@ -16,12 +16,15 @@ public class Test extends CommandOpMode {
     public void initialize() {
         motor1 = hardwareMap.get(DcMotor.class, "ori1");
         ori1 = hardwareMap.get(Servo.class, "ori0");
+
     }
 
     @Override
     public void run() {
         motor1.setPower(1);
         ori1.setPosition(gamepad1.left_trigger);
+
+
 
     }
 }

@@ -8,7 +8,11 @@ public class Brad extends SubsystemBase {
 
     public Servo servo;
     public Brad(HardwareMap hardwareMap){
-    servo = hardwareMap.get(Servo.class,"brad")
+        servo = hardwareMap.get(Servo.class,"brad");
     }
-    public void setPosition()
+    public void setPosition(double position) {
+        servo.setPosition(position);
+    }
+
+    public void goToDefault(){servo.setPosition(0);}
 }

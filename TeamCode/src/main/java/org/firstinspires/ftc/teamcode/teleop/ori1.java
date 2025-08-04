@@ -19,6 +19,5 @@ public class ori1 extends CommandOpMode {
     public void run() {
         super.run();
         motar1.setPower(0.75);
-
     }
 }
